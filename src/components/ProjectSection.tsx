@@ -32,7 +32,7 @@ const ProjectSection = () => {
               Proyecto Real
             </p>
             <h2 className="text-3xl md:text-4xl font-display font-light text-primary-foreground leading-tight mb-8">
-              Primer caso de BiPV vertical integrado en Argentina.
+              Proyecto pionero de integración BiPV vertical en arquitectura hotelera en Argentina.
             </h2>
             <div className="space-y-6 text-primary-foreground/70 font-body font-light leading-relaxed">
               <p>

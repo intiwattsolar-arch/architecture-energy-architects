@@ -26,9 +26,12 @@ const HeroSection = () => {
             Arquitectura que{" "}
             <span className="text-primary italic">genera</span> energía.
           </h1>
-          <p className="text-lg md:text-xl font-body font-light text-primary-foreground/80 max-w-2xl mb-12 leading-relaxed">
-            Integración fotovoltaica en la envolvente edilicia. Consultoría
-            estratégica en arquitectura activa y sistemas BiPV.
+          <p className="text-lg md:text-xl font-body font-light text-primary-foreground/90 max-w-2xl mb-6 leading-relaxed">
+            Cuando la envolvente del edificio se convierte en un activo energético.
+            Consultoría estratégica en arquitectura activa y sistemas BiPV.
+          </p>
+          <p className="text-base font-body font-light text-primary-foreground/70 max-w-2xl mb-12 leading-relaxed italic">
+            La inversión en envolvente deja de ser un costo pasivo y pasa a integrarse en la estrategia energética del activo.
           </p>
           <a
             href="#contacto"
