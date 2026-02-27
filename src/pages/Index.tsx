@@ -4,6 +4,7 @@ import VisionSection from "@/components/VisionSection";
 import BipvSection from "@/components/BipvSection";
 import ExcellenceSection from "@/components/ExcellenceSection";
 import TechnologySection from "@/components/TechnologySection";
+import MuestrarioSection from "@/components/MuestrarioSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ProjectSection from "@/components/ProjectSection";
 import EsgSection from "@/components/EsgSection";
@@ -18,6 +19,7 @@ const Index = () => {
       <BipvSection />
       <ExcellenceSection />
       <TechnologySection />
+      <MuestrarioSection />
       <BenefitsSection />
       <ProjectSection />
       <EsgSection />
