@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import logoIntiwatt from "@/assets/logo-intiwatt.png";
+import logoUpm from "@/assets/logo-upm.jpg";
 
 const pillars = [
   {
@@ -66,6 +67,26 @@ const ExcellenceSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="mt-16 pt-12 border-t border-border flex flex-col md:flex-row items-start md:items-center gap-6"
+        >
+          <img src={logoUpm} alt="Instituto de Energía Solar – UPM" className="h-16 w-auto opacity-70 rounded" />
+          <div>
+            <h3 className="text-lg font-display font-medium text-foreground mb-2">
+              Formación académica de excelencia
+            </h3>
+            <p className="font-body font-light text-muted-foreground leading-relaxed max-w-xl">
+              Equipo con formación en el Instituto de Energía Solar de la Universidad 
+              Politécnica de Madrid (Facultad de Arquitectura), referente internacional 
+              en investigación fotovoltaica aplicada. Mantenemos vínculo activo con 
+              la institución para el desarrollo de soluciones BiPV de vanguardia.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
