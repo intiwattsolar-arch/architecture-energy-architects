@@ -4,11 +4,13 @@ import logoIntiwatt from "@/assets/logo-intiwatt.png";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Visión", href: "#vision" },
-  { label: "BiPV", href: "#bipv" },
-  { label: "Tecnología", href: "#tecnologia" },
-  { label: "Proyecto", href: "#proyecto" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "https://www.intiwatt.com", external: true },
+  { label: "Visión", href: "#vision", external: false },
+  { label: "BiPV", href: "#bipv", external: false },
+  { label: "Tecnología", href: "#tecnologia", external: false },
+  { label: "Muestrario", href: "#muestrario", external: false },
+  { label: "Proyecto", href: "#proyecto", external: false },
+  { label: "Contacto", href: "#contacto", external: false },
 ];
 
 const Navbar = () => {
@@ -24,8 +26,9 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-sm font-body tracking-wide text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
@@ -59,8 +62,9 @@ const Navbar = () => {
             <div className="flex flex-col gap-4 px-6 py-6">
               {navLinks.map((link) => (
                 <a
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
+                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   onClick={() => setOpen(false)}
                   className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors"
                 >
